@@ -27,7 +27,7 @@ def format_map_df(df, keep_keys, df_column_name="JSON"):
 
 
 if __name__ == "__main__":
-    public_gsheets_url = 'https://docs.google.com/spreadsheets/d/1Cbz3zpCBgIcmrnfPTnCukQRy5UFCHuykJiiOq4IcBHs/edit#gid=0'
+    public_gsheets_url = '...'
     ld = load_data(sheets_url=public_gsheets_url)
     #jl = get_json_list(df=ld, df_column_name="JSON")
     map_df = format_map_df(df=ld, keep_keys=['id', 'type', 'ad_id', 'coordinates.lon', 'coordinates.lat', 'location'], df_column_name="JSON")
